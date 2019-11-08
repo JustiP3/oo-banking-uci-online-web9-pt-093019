@@ -8,6 +8,4 @@ class Transfer
     @value = value
   end
 
-def
-
 end
