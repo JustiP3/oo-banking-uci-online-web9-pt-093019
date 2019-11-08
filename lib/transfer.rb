@@ -21,7 +21,10 @@ sender.valid? && receiver.valid? && sender.balance >= self.amount
     sender.balance -= amount
     receiver.balance += amount
     status = "complete"
-  end
-  end
+    else
+    "bad transaction"
+    end#end of if block
+  end#end of method
+
 
 end
