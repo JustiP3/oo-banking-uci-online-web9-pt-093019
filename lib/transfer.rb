@@ -19,7 +19,7 @@ sender.valid? && receiver.valid?
     if self.valid? && sender.balance > amount
     sender.balance -= amount
     receiver.balance += amount
-    status = "complete"
+    self.status = "complete"
   end
 
   end#end of method
