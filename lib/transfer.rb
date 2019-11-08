@@ -31,6 +31,8 @@ sender.valid? && receiver.valid?
 def reverse_transfer
   if self.valid? && receiver.balance > amount && self.status == "complete"
 
+  end
+
 end
 
 
