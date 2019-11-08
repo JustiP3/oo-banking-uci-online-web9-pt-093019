@@ -3,7 +3,7 @@ class Transfer
   attr_reader :last_transaction
 
   def valid?
-sender.valid? && receiver.valid? && sender.balance# >= self.amount
+sender.valid? && receiver.valid? && sender.balance >= self.amount
   end #end of method
 
   def execute_transaction
