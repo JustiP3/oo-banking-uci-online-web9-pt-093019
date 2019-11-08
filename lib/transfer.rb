@@ -20,7 +20,7 @@ sender.valid? && receiver.valid?
     sender.balance -= amount
     receiver.balance += amount
     self.status = "complete"
-  else 
+  else
     self.status = "rejected"
   end
 
