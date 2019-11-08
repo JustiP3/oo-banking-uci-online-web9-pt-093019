@@ -15,7 +15,7 @@ sender.valid? && receiver.valid? && sender.balance >= self.amount
     "bad transaction"
     end#end of if block
   end#end of method
-  
+
   def initialize(sender, receiver, value)
     @sender = sender
     @receiver = receiver
