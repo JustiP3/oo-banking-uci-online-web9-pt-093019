@@ -23,7 +23,7 @@ sender.valid? && receiver.valid? && sender.balance >= self.amount
     @status = "pending"
     @amount = value
 
-    self.execute_transaction
+
   end
 
 
