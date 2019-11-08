@@ -8,6 +8,7 @@ class Transfer
     @value = value
     @status = "pending"
     @amount = value
+    self.evaluate
   end
 
   def valid?
