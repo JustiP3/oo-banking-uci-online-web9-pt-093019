@@ -11,7 +11,7 @@ class Transfer
   end
 
   def valid?
-sender.balance >= self.amount && sender.status == "open" && receiver.status == "open"
+sender.balance >= self.amount && sender.valid? && receiver.valid?
   end #end of method
 
 end
