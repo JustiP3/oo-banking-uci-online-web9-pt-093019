@@ -9,7 +9,10 @@ class Transfer
     @status = "pending"
     @amount = value
 
-  #  self.execute_transaction
+    if self.valid?
+      self.execute_transaction
+    end
+
   end
 
   def valid?
