@@ -16,7 +16,7 @@ sender.balance >= self.amount && sender.valid? && receiver.valid?
 
   def execute_transaction
     sender.balance -= amount
-    receiver.balance += amount 
-  end 
+    receiver.balance += amount
+  end
 
 end
