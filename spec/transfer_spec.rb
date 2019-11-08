@@ -40,11 +40,11 @@ describe 'Transfer' do
       transfer_class = File.read("lib/transfer.rb")
 
     transfer.valid?
-    
+
       expect(amanda).to receive(:valid?).and_return(true)
       expect(avi).to receive(:valid?).and_return(true)
 
-  
+
     end
   end
 
