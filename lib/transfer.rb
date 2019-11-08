@@ -7,6 +7,6 @@ class Transfer
     @value = value
   end
 
-def 
+def
 
 end
