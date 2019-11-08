@@ -15,14 +15,19 @@ sender.valid? && receiver.valid? && sender.balance >= self.amount
   end #end of method
 
   def execute_transaction
-    if self.valid?
     sender.balance -= amount
     receiver.balance += amount
     status = "complete"
-    else
-    "bad transaction"
-    end#end of if block
   end#end of method
+
+  def evaluate
+if self.valid?
+  self.execute_transaction
+else
+  "Transaction rejected. Please check your account balance."
+end
+
+  end
 
 
 
