@@ -38,10 +38,7 @@ def reverse_transfer
     "Transaction rejected. Please check your account balance."
   end
 
-
-end
-
-
+end #end of method
 
 
 end #end of class
