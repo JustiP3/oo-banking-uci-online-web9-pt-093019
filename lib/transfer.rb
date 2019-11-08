@@ -12,6 +12,6 @@ class Transfer
 
   def valid?
 sender.balance >= self.amount && sender.status == "open" && receiver.status == "open"
-  end #end of method 
+  end #end of method
 
 end
