@@ -28,7 +28,21 @@ sender.valid? && receiver.valid?
   end#end of method
 
 
+def reverse_transfer
+  placeholder = self.receiver
+  self.receiver = self.sender
+  self.sender = placeholder
 
+  if self.valid? && sender.balance > amount && self.status == "pending"
+  sender.balance -= amount
+  receiver.balance += amount
+  self.status = "complete"
+else
+  self.status = "rejected"
+  "Transaction rejected. Please check your account balance."
+end
+
+end
 
 
 
