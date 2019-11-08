@@ -27,4 +27,4 @@ sender.valid? && receiver.valid? && sender.balance >= self.amount
   end#end of method
 
 
-end
+end #end of class
