@@ -22,6 +22,7 @@ sender.valid? && receiver.valid?
     self.status = "complete"
   else
     self.status = "rejected"
+    "Transfer rejected. Please check your account balance."
   end
 
   end#end of method
