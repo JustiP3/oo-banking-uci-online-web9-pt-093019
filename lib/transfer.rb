@@ -8,6 +8,8 @@ class Transfer
     @value = value
     @status = "pending"
     @amount = value
+
+    execute_transaction if valid?
   end
 
   def valid?
